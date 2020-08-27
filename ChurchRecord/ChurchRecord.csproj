@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65234DA7-5298-446B-96B5-C84341533DA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChurchRecord</RootNamespace>
+    <AssemblyName>ChurchRecord</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>ChurchRecord.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="commonFunctionsClass.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminReset.Designer.cs">
+      <DependentUpon>frmAdminReset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHomePage.Designer.cs">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHomePage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHomePage2.Designer.cs">
+      <DependentUpon>frmHomePage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIncome.Designer.cs">
+      <DependentUpon>frmIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventory.Designer.cs">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageUsers.Designer.cs">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewInventory.Designer.cs">
+      <DependentUpon>frmViewInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passwordReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passwordReset.Designer.cs">
+      <DependentUpon>passwordReset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminReset.resx">
+      <DependentUpon>frmAdminReset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHomePage.resx">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHomePage2.resx">
+      <DependentUpon>frmHomePage2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIncome.resx">
+      <DependentUpon>frmIncome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventory.resx">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageUsers.resx">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewInventory.resx">
+      <DependentUpon>frmViewInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passwordReset.resx">
+      <DependentUpon>passwordReset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userCreation.resx">
+      <DependentUpon>userCreation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userCreationMain.resx">
+      <DependentUpon>userCreationMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="userCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userCreation.Designer.cs">
+      <DependentUpon>userCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userCreationMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userCreationMain.Designer.cs">
+      <DependentUpon>userCreationMain.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stMonica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgcolor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome-icon100x100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome-icon_100by100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome-icon100sqr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome-icon100x1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration_icon222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\member-regICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgImage-DarkblueMerged.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgImage-DarkblueMerged22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar-Image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fin-Image-Main.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fin-Image-Main1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fina-Image22.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueSportedColor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usernanagement-icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-management-main.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
